@@ -1,0 +1,69 @@
+.order {
+    display: flex;
+    align-items: center;
+    background-color: #fafafa;
+    padding: 1vw;
+
+    img {
+        width: 20vw;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .info {
+        padding-right: 2vw;
+    }
+
+    .title,
+    .price {
+        padding: 0 1vw;
+    }
+
+    .title {
+        font-weight: bolder;
+    }
+
+    .trash {
+        color: #ca5252;
+        cursor:pointer;
+        transition:color, transform 500ms ease ;
+        &:hover{
+            color:#bb0000;
+            transform: scale(1.5);
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .order {
+        img {
+            width: 10vw;
+        }
+
+        .info {
+            padding-right: 5vw;
+        }
+
+        .title,
+        .price {
+            font-size: 2.5vw;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .order {
+        img {
+            width: 5vw;
+        }
+
+        .info {
+            padding-right: 5vw;
+        }
+
+        .title,
+        .price {
+            font-size: 1.5vw;
+        }
+    }
+}

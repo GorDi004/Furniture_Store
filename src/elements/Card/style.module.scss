@@ -1,0 +1,51 @@
+.card{
+    *{
+        padding: 0;
+        margin:0;
+        width:15rem;
+    }
+    border: 1px solid #f0f0f0;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: rgba(0,0,0,.88);
+    transition: box-shadow .2s,border-color .2s;
+    margin-top:1rem;
+    & img{
+        border-radius: 8px 8px 0 0;
+        width:17rem;
+        height:17rem;
+        object-fit: contain;
+    }
+    & .title, .price{
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding:0 1rem;
+    }
+    & .desc{
+        padding: 0 1rem;
+    }
+    .block{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+    }
+    & .button{
+        margin: 0 1rem;
+        background-color: #bb0000;
+        color:white;
+        width:2.5rem;
+        border-radius: 50px;
+        padding:5px;
+        text-align: center;
+        margin: auto;
+        font-size: 1.35rem;
+        &:hover{
+            transform: scale(1.25) translateY(-5px);
+            cursor: pointer;
+        }
+    }
+    &:hover{
+        border-color: transparent;
+        box-shadow: 0 1px 2px -2px rgba(0,0,0,.16), 0 3px 6px 0 rgba(0,0,0,.12), 0 5px 12px 4px rgba(0,0,0,.09);
+    }
+}
